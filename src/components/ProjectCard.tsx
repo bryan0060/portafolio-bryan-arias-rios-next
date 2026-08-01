@@ -64,7 +64,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             target="_blank"
             icon={<FaExternalLinkAlt />}
           >
-            Ver Demo
+            Ver Sitio
           </Button>
         )}
         
