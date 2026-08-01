@@ -1,0 +1,58 @@
+.tech-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 20px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-normal);
+  cursor: pointer;
+  min-width: 120px;
+}
+
+.tech-badge:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-primary);
+  box-shadow: var(--shadow-md);
+  background: var(--bg-tertiary);
+}
+
+.tech-badge-icon {
+  font-size: 48px;
+  transition: all var(--transition-normal);
+}
+
+.tech-badge:hover .tech-badge-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px currentColor);
+}
+
+.tech-badge-name {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+  text-align: center;
+  transition: color var(--transition-fast);
+}
+
+.tech-badge:hover .tech-badge-name {
+  color: var(--text-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tech-badge {
+    padding: 20px 16px;
+    min-width: 100px;
+  }
+
+  .tech-badge-icon {
+    font-size: 40px;
+  }
+
+  .tech-badge-name {
+    font-size: var(--font-size-xs);
+  }
+}

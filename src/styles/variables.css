@@ -1,0 +1,63 @@
+:root {
+  /* Colores principales */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #141414;
+  --bg-tertiary: #1a1a1a;
+  
+  /* Colores de acento */
+  --accent-primary: #00d9ff;
+  --accent-secondary: #0099ff;
+  --accent-hover: #00b8e6;
+  --accent-gradient: linear-gradient(135deg, #00d9ff 0%, #0099ff 100%);
+  
+  /* Textos */
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --text-muted: #707070;
+  
+  /* Bordes */
+  --border-color: #2a2a2a;
+  --border-hover: #3a3a3a;
+  
+  /* Sombras */
+  --shadow-sm: 0 2px 8px rgba(0, 217, 255, 0.1);
+  --shadow-md: 0 4px 16px rgba(0, 217, 255, 0.15);
+  --shadow-lg: 0 8px 32px rgba(0, 217, 255, 0.2);
+  --shadow-glow: 0 0 40px rgba(0, 217, 255, 0.3);
+  
+  /* Espaciado */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 48px;
+  --spacing-2xl: 64px;
+  
+  /* Bordes redondeados */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  
+  /* Transiciones */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  
+  /* Fuentes */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+  --font-size-5xl: 3rem;
+  
+  /* Pesos de fuente */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}

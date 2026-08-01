@@ -1,0 +1,127 @@
+.tech-stack {
+  background: var(--bg-secondary);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: var(--font-size-lg);
+  margin: 16px 0 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tech-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 60px;
+}
+
+.tech-category {
+  opacity: 0;
+}
+
+.category-title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--accent-primary);
+  margin: 0 0 24px 0;
+  text-align: center;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.learning-section {
+  margin-top: 80px;
+  padding-top: 60px;
+  border-top: 1px solid var(--border-color);
+}
+
+.learning-title {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.learning-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.learning-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  transition: all var(--transition-normal);
+  opacity: 0;
+}
+
+.learning-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.learning-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.learning-card-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+  margin: 0;
+  flex: 1;
+}
+
+.learning-status {
+  background: linear-gradient(135deg, rgba(0, 217, 255, 0.2) 0%, rgba(0, 153, 255, 0.2) 100%);
+  color: var(--accent-primary);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1px solid var(--accent-primary);
+  white-space: nowrap;
+}
+
+.learning-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-size: var(--font-size-base);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tech-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 16px;
+  }
+
+  .learning-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .learning-card {
+    padding: 24px;
+  }
+}
