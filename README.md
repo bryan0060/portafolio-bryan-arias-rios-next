@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio - Bryan Arias Ríos
 
-## Getting Started
+Portafolio profesional de Bryan Arias Rios, desarrollador Full Stack Junior, diseñado para destacar proyectos reales, experiencia técnica y habilidades en desarrollo web y móvil además de futuro aprendizaje en IA y automatizaciones.
 
-First, run the development server:
+## Deploy: https://bryanarias.vercel.app/
 
+## Características
+
+- Diseño moderno con tema oscuro
+- Totalmente responsive (desktop, tablet, mobile)
+- Animaciones suaves y transiciones
+- Desarrollado con Next.js 15 (App Router) + TypeScript
+
+## Secciones
+
+- **Hero**: Presentación principal con llamados a la acción
+- **Sobre Mí**: Perfil profesional y enfoque técnico
+- **Stack Tecnológico**: Tecnologías y herramientas que manejo
+- **Proyectos**: Showcase de aplicaciones reales con demos funcionales
+- **Experiencia**: Trayectoria profesional y logros
+- **Educación**: Formación académica y certificaciones
+- **Contacto**: Formulario y enlaces de contacto
+
+## Tecnologías utilizadas
+
+- Next.js 15 (App Router)
+- TypeScript
+- React 18
+- Tailwind CSS
+- React Icons
+
+## Instalación
+
+1. Clona el repositorio:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/bryan0060/portafolio-bryan-arias-rios-next.git
+cd portafolio-bryan-arias-rios-next
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instala las dependencias:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Uso
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Desarrollo local
+```bash
+npm run dev
+```
+El proyecto estará disponible en `http://localhost:3000`
 
-## Learn More
+### Build de producción
+```bash
+npm run build
+```
+Los archivos optimizados se generarán en la carpeta `.next/`
 
-To learn more about Next.js, take a look at the following resources:
+### Iniciar build de producción localmente
+```bash
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Estructura del proyecto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+portafolio-bryan-arias-rios-next/
+├── public/
+│   ├── favicon.ico
+│   ├── profile.jpg
+│   └── cv-bryan-arias.pdf
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   └── globals.css
+│   ├── components/
+│   │   ├── Navbar.tsx
+│   │   ├── Footer.tsx
+│   │   ├── ProjectCard.tsx
+│   │   ├── Button.tsx
+│   │   └── TechBadge.tsx
+│   ├── sections/
+│   │   ├── Hero.tsx
+│   │   ├── About.tsx
+│   │   ├── TechStack.tsx
+│   │   ├── Projects.tsx
+│   │   ├── Experience.tsx
+│   │   ├── Education.tsx
+│   │   └── Contact.tsx
+│   ├── data/
+│   │   ├── constants.ts
+│   │   ├── projects.ts
+│   │   └── technologies.ts
+│   └── styles/
+│       ├── variables.css
+│       └── animations.css
+├── .gitignore
+├── package.json
+├── tsconfig.json
+├── next.config.ts
+└── README.md
+```
 
-## Deploy on Vercel
+## Personalización
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Colores
+Edita las variables en `src/styles/variables.css` para cambiar el esquema de colores.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Contenido
+- **Información personal**: `src/data/constants.ts`
+- **Proyectos**: `src/data/projects.ts`
+- **Tecnologías**: `src/data/technologies.ts`
+
+## Licencia
+
+Este proyecto es de uso personal para Bryan Arias Ríos.
+
+## Contacto
+
+- **Email**: bryanrios0060@gmail.com
+- **Whatsapp**: [+57 310 8907081](https://wa.link/kgnvhq)
+- **LinkedIn**: [Bryan Arias Ríos](https://www.linkedin.com/in/bryan-arias-rios)
+- **GitHub**: [@bryan0060](https://github.com/bryan0060)
+
+---
+
+Desarrollado por Bryan Arias Ríos
