@@ -2,9 +2,9 @@ export const PROJECTS = [
   {
     id: 0,
     title: "Portafolio Profesional (Este sitio)",
-    description: "Portafolio web personal desarrollado con React y Vite, diseñado con un tema oscuro moderno y totalmente responsive. Incluye animaciones suaves, navegación fluida y secciones optimizadas para destacar proyectos, experiencia y habilidades técnicas.",
-    technologies: ["React", "Vite", "CSS3", "React Icons", "React Scroll"],
-    github: "https://github.com/bryan0060/portafolio-bryan-arias-rios",
+    description: "Portafolio web personal desarrollado con Next.js y TypeScript, diseñado con un tema oscuro moderno y totalmente responsive. Incluye animaciones suaves, navegación fluida y secciones optimizadas para destacar proyectos, experiencia y habilidades técnicas.",
+    technologies: ["Next.js", "TypeScript", "React", "Tailwind CSS", "React Icons"],
+    github: "https://github.com/bryan0060/portafolio-bryan-arias-rios-next",
     type: "frontend",
     featured: true
   },
