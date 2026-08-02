@@ -1,24 +1,21 @@
 import { NextRequest, NextResponse } from "next/server";
+import fs from 'fs';
+import path from 'path';
 
-// Esto es temporal: un resumen corto escrito a mano.
-// Más adelante lo vamos a reemplazar por el contenido completo
-// de knowledge-base.md cuando lo armemos con calma.
-const SYSTEM_PROMPT = `
-Eres un asistente que responde preguntas sobre Bryan Arias Ríos,
-un Full Stack Developer Junior especializado en React, Next.js,
-Django y Python además de que está muy interesado en el uso de la IA Engineering, sabe manejar opencode, claude
-y usar APIs de diferentes proveedores de IA (como gemini en este caso). Responde solo con información real sobre Bryan.
-Si te preguntan algo que no sabes sobre él, dilo honestamente
-en vez de inventar datos.
+const knowledgeBase = fs.readFileSync(
+  path.join(process.cwd(), 'src/data/knowledge-base.md'),
+  'utf-8'
+);
 
-Info básica de Bryan:
-- Full Stack Developer Junior
-- Stack principal: React, Next.js, Django, Python
-- Portafolio: https://bryanarias.vercel.app/
-- GitHub: https://github.com/bryan0060
-- Edad: 20 años
-- Ubicación: Itagui, Antioquia, Colombia
-`;
+const behaviorInstructions = process.env.BOT_BEHAVIOR_INSTRUCTIONS || '';
+
+const SYSTEM_PROMPT = `Eres el asistente virtual del portafolio de Bryan Arias Rios. Tu trabajo es responder preguntas sobre su perfil profesional usando la siguiente información. Responde en texto plano, sin usar sintaxis Markdown compleja innecesaria, de forma clara y natural.
+
+INFORMACIÓN SOBRE BRYAN:
+${knowledgeBase}
+
+INSTRUCCIONES DE COMPORTAMIENTO:
+${behaviorInstructions}`;
 
 const GEMINI_MODEL = "gemini-3.5-flash";
 const GEMINI_URL = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
