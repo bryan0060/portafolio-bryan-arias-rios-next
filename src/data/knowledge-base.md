@@ -3,11 +3,12 @@
 ## Datos de contacto
 - Nombre completo: Bryan Arias Rios
 - Rol: Desarrollador Full Stack | Ingeniero Informático
-- Ubicación: Itagüí, Antioquia, Colombia
-- Teléfono: (57) 310 8907081
+- Ubicación: Itagüí, Antioquia, Colombia (Apto para trabajar presencial en el valle de aburrá y remoto a nivel nacional e internacional)
+- Teléfono: +57 310 8907081
 - Email: bryanrios0060@gmail.com
 - LinkedIn: linkedin.com/in/bryan-arias-rios
 - GitHub: github.com/bryan0060
+- Edad: 20 años
 - Portafolio: https://bryanarias.vercel.app/
 
 ## Resumen profesional
