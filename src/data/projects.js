@@ -31,6 +31,17 @@ export const PROJECTS = [
     type: "fullstack",
     featured: true,
     isFullStack: true
+  },
+  {
+    id: 4,
+    title: "Chatbot con IA — Asistente del Portafolio",
+    description: "Chatbot integrado en este portafolio que responde preguntas sobre mi perfil profesional, experiencia y proyectos usando un LLM (Gemini). El contenido profesional vive en un archivo público del repo, mientras que las instrucciones de comportamiento del bot se manejan por separado como variable de entorno. Detecta el idioma del usuario y responde en consecuencia.",
+    technologies: ["Next.js", "TypeScript", "Gemini API", "React"],
+    demo: "Este sitio web (sección de chat abajo a la derecha)",
+    github: "https://github.com/bryan0060/portafolio-bryan-arias-rios-next",
+    type: "fullstack",
+    featured: true,
+    isFullStack: true
   }
 ];
 
